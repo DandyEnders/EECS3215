@@ -1,0 +1,6 @@
+14:48:25 **** Incremental Build of configuration Debug for project LPC802_Project_part2 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+
+14:48:25 Build Finished. 0 errors, 0 warnings. (took 298ms)
+

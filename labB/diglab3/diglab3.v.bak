@@ -1,0 +1,83 @@
+module diglab3(
+  // Clock Input (50 MHz)
+  input  CLOCK_50,
+  //  Push Buttons
+  input  [3:0]  KEY,
+  //  DPDT Switches 
+  input  [17:0]  SW,
+  //  7-SEG Displays
+  output  [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,
+  //  LEDs
+  output  [8:0]  LEDG,  //  LED Green[8:0]
+  output  [17:0]  LEDR,  //  LED Red[17:0]
+  //  GPIO Connections
+  inout  [35:0]  GPIO_0, GPIO_1
+);
+
+//	All inout port turn to tri-state
+assign	GPIO_0		=	36'hzzzzzzzzz;
+assign	GPIO_1		=	36'hzzzzzzzzz;
+
+wire RST;
+assign RST = KEY[0];
+
+// Setup clock divider
+wire [6:0] myclock;
+clock_divider cdiv(CLOCK_50,RST,myclock);
+
+// Send switches to red leds 
+assign LEDR = SW;
+
+// Blank the unused HEX displays
+assign HEX7 = 7'h7f;
+assign HEX6 = 7'h7f;
+assign HEX5 = 7'h7f;
+assign HEX4 = 7'h7f;
+
+// state variable
+
+reg state;
+
+// set up counters
+wire [3:0] digit3, digit2, digit1, digit0;
+wire [3:0] ovr;
+
+wire clock, reset, pulse;
+assign clock = (state? myclock[2]: 1'b0);
+
+assign reset = (~pulse & RST);
+
+decimal_counter count0(digit0,ovr[0],clock,reset);
+decimal_counter count1(digit1,ovr[1],ovr[0],reset);
+decimal_counter count2(digit2,ovr[2],ovr[1],reset);
+decimal_counter count3(digit3,ovr[3],ovr[2],reset);
+
+// map to 7-segment displays
+
+hex_7seg dsp0(digit0,HEX0);
+hex_7seg dsp1(digit1,HEX1);
+hex_7seg dsp2(digit2,HEX2);
+hex_7seg dsp3(digit3,HEX3);
+
+// use one-pulse to trigger reset
+
+oneshot pulser(
+.pulse_out(pulse),
+.trigger_in(state),
+.clk(CLOCK_50)
+);
+
+
+
+always @ (negedge KEY[3] or negedge RST)
+begin
+	if (!RST) state <= 1'b0;
+	else state <= ~state;
+end
+
+// map state to green LEDs
+assign LEDG[0] = ~RST;
+assign LEDG[1] = state;
+assign LEDG[8:2] = 6'h00;
+
+endmodule
