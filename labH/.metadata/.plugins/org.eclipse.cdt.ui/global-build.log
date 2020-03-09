@@ -1,0 +1,970 @@
+12:25:36 **** Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/semihost_hardfault.c
+Building file: ../startup/startup_lpc802.c
+Building file: ../drivers/fsl_usart.c
+Building file: ../source/LPC802_Project.c
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../device/system_LPC802.c
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_power.c
+Invoking: MCU C Compiler
+Building file: ../drivers/fsl_reset.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Building file: ../drivers/fsl_common.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_lpc802.d" -MT"startup/startup_lpc802.o" -MT"startup/startup_lpc802.d" -o "startup/startup_lpc802.o" "../startup/startup_lpc802.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_power.d" -MT"drivers/fsl_power.o" -MT"drivers/fsl_power.d" -o "drivers/fsl_power.o" "../drivers/fsl_power.c"
+Building file: ../drivers/fsl_gpio.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_reset.d" -MT"drivers/fsl_reset.o" -MT"drivers/fsl_reset.d" -o "drivers/fsl_reset.o" "../drivers/fsl_reset.c"
+Building file: ../drivers/fsl_swm.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_usart.d" -MT"drivers/fsl_usart.o" -MT"drivers/fsl_usart.d" -o "drivers/fsl_usart.o" "../drivers/fsl_usart.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_LPC802.d" -MT"device/system_LPC802.o" -MT"device/system_LPC802.d" -o "device/system_LPC802.o" "../device/system_LPC802.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_swm.d" -MT"drivers/fsl_swm.o" -MT"drivers/fsl_swm.d" -o "drivers/fsl_swm.o" "../drivers/fsl_swm.c"
+Finished building: ../startup/startup_lpc802.c
+Finished building: ../source/LPC802_Project.c
+Finished building: ../drivers/fsl_gpio.c
+Finished building: ../device/system_LPC802.c
+ 
+ 
+Finished building: ../drivers/fsl_common.c
+Finished building: ../source/semihost_hardfault.c
+Finished building: ../utilities/fsl_debug_console.c
+Finished building: ../drivers/fsl_clock.c
+Finished building: ../drivers/fsl_reset.c
+Finished building: ../drivers/fsl_swm.c
+Finished building: ../drivers/fsl_power.c
+Finished building: ../drivers/fsl_usart.c
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Building file: ../component/uart/miniusart_adapter.c
+Building file: ../board/boards/board.c
+Building file: ../board/boards/clock_config.c
+Building file: ../board/boards/peripherals.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/miniusart_adapter.d" -MT"component/uart/miniusart_adapter.o" -MT"component/uart/miniusart_adapter.d" -o "component/uart/miniusart_adapter.o" "../component/uart/miniusart_adapter.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/board.d" -MT"board/boards/board.o" -MT"board/boards/board.d" -o "board/boards/board.o" "../board/boards/board.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/clock_config.d" -MT"board/boards/clock_config.o" -MT"board/boards/clock_config.d" -o "board/boards/clock_config.o" "../board/boards/clock_config.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/peripherals.d" -MT"board/boards/peripherals.o" -MT"board/boards/peripherals.d" -o "board/boards/peripherals.o" "../board/boards/peripherals.c"
+Building file: ../board/boards/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/pin_mux.d" -MT"board/boards/pin_mux.o" -MT"board/boards/pin_mux.d" -o "board/boards/pin_mux.o" "../board/boards/pin_mux.c"
+Finished building: ../board/boards/peripherals.c
+ 
+Finished building: ../component/uart/miniusart_adapter.c
+Finished building: ../board/boards/clock_config.c
+Finished building: ../board/boards/board.c
+ 
+ 
+ 
+Finished building: ../board/boards/pin_mux.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2276 B      16256 B     14.00%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2272	      4	    452	   2728	    aa8	LPC802_Project.axf
+ 
+12:28:39 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2272 B      16256 B     13.98%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2268	      4	    452	   2724	    aa4	LPC802_Project.axf
+ 
+12:44:48 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+12:45:08 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+12:46:09 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+12:46:18 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+12:51:04 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+12:51:12 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+12:54:23 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+12:54:27 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:00:10 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+13:00:19 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:01:08 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+13:01:26 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:19:34 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+13:19:40 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:24:20 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2504 B      16256 B     15.40%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2500	      4	    452	   2956	    b8c	LPC802_Project.axf
+ 
+13:28:44 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2528 B      16256 B     15.55%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2524	      4	    452	   2980	    ba4	LPC802_Project.axf
+ 
+13:28:53 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:38:36 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2532 B      16256 B     15.58%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2528	      4	    452	   2984	    ba8	LPC802_Project.axf
+ 
+13:38:44 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:40:35 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2588 B      16256 B     15.92%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2584	      4	    452	   3040	    be0	LPC802_Project.axf
+ 
+13:40:36 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:40:54 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2756 B      16256 B     16.95%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2752	      4	    452	   3208	    c88	LPC802_Project.axf
+ 
+13:41:05 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:41:30 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:41:39 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+13:57:59 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        2756 B      16256 B     16.95%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   2752	      4	    452	   3208	    c88	LPC802_Project.axf
+ 
+14:03:22 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3932 B      16256 B     24.19%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3928	      4	    452	   4384	   1120	LPC802_Project.axf
+ 
+14:03:45 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3856 B      16256 B     23.72%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3852	      4	    452	   4308	   10d4	LPC802_Project.axf
+ 
+14:03:54 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:06:10 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        4024 B      16256 B     24.75%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   4020	      4	    452	   4476	   117c	LPC802_Project.axf
+ 
+14:06:27 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:08:02 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3836 B      16256 B     23.60%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3832	      4	    452	   4288	   10c0	LPC802_Project.axf
+ 
+14:08:09 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:09:56 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+Building file: ../source/LPC802_Project.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+Finished building: ../source/LPC802_Project.c
+ 
+Building target: LPC802_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC802_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC802_Project_Debug.ld -o "LPC802_Project.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3972 B      16256 B     24.43%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: LPC802_Project.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "LPC802_Project.axf"; # arm-none-eabi-objcopy -v -O binary "LPC802_Project.axf" "LPC802_Project.bin" ; # checksum -p LPC802 -d "LPC802_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3968	      4	    452	   4424	   1148	LPC802_Project.axf
+ 
+14:10:28 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:10:35 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:10:42 **** Incremental Build of configuration Debug for project LPC802_Project ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:20:25 **** Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../startup/startup_lpc802.c
+Building file: ../source/PART3.c
+Building file: ../source/semihost_hardfault.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MPInvoking: MCU C Compiler
+ -MF"startup/startup_lpc802.d" -MT"startup/startup_lpc802.o" -MT"startup/startup_lpc802.d" -o "startup/startup_lpc802.o" "../startup/startup_lpc802.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_common.c
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_power.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+Building file: ../drivers/fsl_reset.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_power.d" -MT"drivers/fsl_power.o" -MT"drivers/fsl_power.d" -o "drivers/fsl_power.o" "../drivers/fsl_power.c"
+Invoking: MCU C Compiler
+Building file: ../drivers/fsl_swm.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_reset.d" -MT"drivers/fsl_reset.o" -MT"drivers/fsl_reset.d" -o "drivers/fsl_reset.o" "../drivers/fsl_reset.c"
+Building file: ../drivers/fsl_usart.c
+Building file: ../device/system_LPC802.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_swm.d" -MT"drivers/fsl_swm.o" -MT"drivers/fsl_swm.d" -o "drivers/fsl_swm.o" "../drivers/fsl_swm.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_usart.d" -MT"drivers/fsl_usart.o" -MT"drivers/fsl_usart.d" -o "drivers/fsl_usart.o" "../drivers/fsl_usart.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_LPC802.d" -MT"device/system_LPC802.o" -MT"device/system_LPC802.d" -o "device/system_LPC802.o" "../device/system_LPC802.c"
+../source/PART3.c: In function 'CTIMER0_IRQHandler':
+../source/PART3.c:217:24: error: 'LED_USER1' undeclared (first use in this function)
+   GPIO->NOT[0] = (1UL<<LED_USER1);
+                        ^~~~~~~~~
+../source/PART3.c:217:24: note: each undeclared identifier is reported only once for each function it appears in
+../source/PART3.c: In function 'main':
+../source/PART3.c:295:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+Finished building: ../source/semihost_hardfault.c
+make: *** [source/subdir.mk:25: source/PART3.o] Error 1
+make: *** Waiting for unfinished jobs....
+ 
+Finished building: ../startup/startup_lpc802.c
+Finished building: ../utilities/fsl_debug_console.c
+ 
+ 
+Finished building: ../drivers/fsl_common.c
+Finished building: ../drivers/fsl_clock.c
+ 
+Finished building: ../drivers/fsl_gpio.c
+ 
+ 
+Finished building: ../drivers/fsl_power.c
+Finished building: ../device/system_LPC802.c
+ 
+Finished building: ../drivers/fsl_reset.c
+Finished building: ../drivers/fsl_swm.c
+ 
+ 
+ 
+Finished building: ../drivers/fsl_usart.c
+ 
+"make -r -j12 all" terminated with exit code 2. Build might be incomplete.
+14:20:34 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+Building file: ../source/PART3.c
+Building file: ../component/uart/miniusart_adapter.c
+Building file: ../board/boards/board.c
+Building file: ../board/boards/clock_config.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/miniusart_adapter.d" -MT"component/uart/miniusart_adapter.o" -MT"component/uart/miniusart_adapter.d" -o "component/uart/miniusart_adapter.o" "../component/uart/miniusart_adapter.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/board.d" -MT"board/boards/board.o" -MT"board/boards/board.d" -o "board/boards/board.o" "../board/boards/board.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/clock_config.d" -MT"board/boards/clock_config.o" -MT"board/boards/clock_config.d" -o "board/boards/clock_config.o" "../board/boards/clock_config.c"
+Building file: ../board/boards/peripherals.c
+Building file: ../board/boards/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/peripherals.d" -MT"board/boards/peripherals.o" -MT"board/boards/peripherals.d" -o "board/boards/peripherals.o" "../board/boards/peripherals.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/pin_mux.d" -MT"board/boards/pin_mux.o" -MT"board/boards/pin_mux.d" -o "board/boards/pin_mux.o" "../board/boards/pin_mux.c"
+../source/PART3.c: In function 'CTIMER0_IRQHandler':
+../source/PART3.c:217:24: error: 'LED_USER1' undeclared (first use in this function)
+   GPIO->NOT[0] = (1UL<<LED_USER1);
+                        ^~~~~~~~~
+../source/PART3.c:217:24: note: each undeclared identifier is reported only once for each function it appears in
+../source/PART3.c: In function 'main':
+../source/PART3.c:295:6: warning: unused variable 'i' [-Wunused-variable]
+  int i = 0;
+      ^
+make: *** [source/subdir.mk:23: source/PART3.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../board/boards/peripherals.c
+Finished building: ../board/boards/board.c
+ 
+ 
+Finished building: ../component/uart/miniusart_adapter.c
+Finished building: ../board/boards/clock_config.c
+ 
+ 
+Finished building: ../board/boards/pin_mux.c
+ 
+"make -r -j12 all" terminated with exit code 2. Build might be incomplete.
+14:23:16 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5592 B      16256 B     34.40%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         468 B         2 KB     22.85%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5588	      4	    464	   6056	   17a8	PART3.axf
+ 
+14:23:53 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:25:32 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5596 B      16256 B     34.42%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         472 B         2 KB     23.05%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5592	      4	    468	   6064	   17b0	PART3.axf
+ 
+14:25:39 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:53:10 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        5596 B      16256 B     34.42%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         472 B         2 KB     23.05%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5592	      4	    468	   6064	   17b0	PART3.axf
+ 
+14:53:25 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:53:58 **** Build of configuration Debug for project PART4 ****
+make -r -j12 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../startup/startup_lpc802.c
+Building file: ../source/part4.c
+Building file: ../source/semihost_hardfault.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_lpc802.d" -MT"startup/startup_lpc802.o" -MT"startup/startup_lpc802.d" -o "startup/startup_lpc802.o" "../startup/startup_lpc802.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/part4.d" -MT"source/part4.o" -MT"source/part4.d" -o "source/part4.o" "../source/part4.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_common.c
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_power.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_power.d" -MT"drivers/fsl_power.o" -MT"drivers/fsl_power.d" -o "drivers/fsl_power.o" "../drivers/fsl_power.c"
+Building file: ../drivers/fsl_reset.c
+Building file: ../drivers/fsl_swm.c
+Building file: ../drivers/fsl_usart.c
+Building file: ../device/system_LPC802.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_reset.d" -MT"drivers/fsl_reset.o" -MT"drivers/fsl_reset.d" -o "drivers/fsl_reset.o" "../drivers/fsl_reset.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_swm.d" -MT"drivers/fsl_swm.o" -MT"drivers/fsl_swm.d" -o "drivers/fsl_swm.o" "../drivers/fsl_swm.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_usart.d" -MT"drivers/fsl_usart.o" -MT"drivers/fsl_usart.d" -o "drivers/fsl_usart.o" "../drivers/fsl_usart.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_LPC802.d" -MT"device/system_LPC802.o" -MT"device/system_LPC802.d" -o "device/system_LPC802.o" "../device/system_LPC802.c"
+Finished building: ../startup/startup_lpc802.c
+ 
+Building file: ../component/uart/miniusart_adapter.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/miniusart_adapter.d" -MT"component/uart/miniusart_adapter.o" -MT"component/uart/miniusart_adapter.d" -o "component/uart/miniusart_adapter.o" "../component/uart/miniusart_adapter.c"
+Finished building: ../device/system_LPC802.c
+Finished building: ../drivers/fsl_power.c
+ 
+ 
+Finished building: ../drivers/fsl_reset.c
+Finished building: ../drivers/fsl_swm.c
+Building file: ../board/boards/board.c
+Building file: ../board/boards/clock_config.c
+Finished building: ../source/semihost_hardfault.c
+ 
+ 
+Invoking: MCU C Compiler
+Finished building: ../drivers/fsl_usart.c
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/board.d" -MT"board/boards/board.o" -MT"board/boards/board.d" -o "board/boards/board.o" "../board/boards/board.c"
+Invoking: MCU C Compiler
+ 
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/clock_config.d" -MT"board/boards/clock_config.o" -MT"board/boards/clock_config.d" -o "board/boards/clock_config.o" "../board/boards/clock_config.c"
+Finished building: ../utilities/fsl_debug_console.c
+ 
+Building file: ../board/boards/peripherals.c
+ 
+Building file: ../board/boards/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/peripherals.d" -MT"board/boards/peripherals.o" -MT"board/boards/peripherals.d" -o "board/boards/peripherals.o" "../board/boards/peripherals.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/pin_mux.d" -MT"board/boards/pin_mux.o" -MT"board/boards/pin_mux.d" -o "board/boards/pin_mux.o" "../board/boards/pin_mux.c"
+Finished building: ../drivers/fsl_clock.c
+Finished building: ../source/part4.c
+Finished building: ../drivers/fsl_common.c
+ 
+ 
+ 
+Finished building: ../drivers/fsl_gpio.c
+Finished building: ../component/uart/miniusart_adapter.c
+ 
+ 
+Finished building: ../board/boards/peripherals.c
+ 
+Finished building: ../board/boards/board.c
+Finished building: ../board/boards/clock_config.c
+ 
+ 
+Finished building: ../board/boards/pin_mux.c
+ 
+Building target: PART4.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART4.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T "PART4_Debug.ld" -o "PART4.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/part4.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3704 B      16256 B     22.79%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         460 B         2 KB     22.46%
+Finished building target: PART4.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART4.axf"; # arm-none-eabi-objcopy -v -O binary "PART4.axf" "PART4.bin" ; # checksum -p LPC802 -d "PART4.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3700	      4	    456	   4160	   1040	PART4.axf
+ 
+14:54:11 **** Incremental Build of configuration Debug for project PART4 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:58:12 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:58:33 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:58:55 **** Clean-only build of configuration Debug for project PART2 ****
+make -r -j12 clean 
+rm -rf  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o  ./utilities/fsl_debug_console.d  ./startup/startup_lpc802.d  ./source/LPC802_Project.d ./source/semihost_hardfault.d  ./drivers/fsl_clock.d ./drivers/fsl_common.d ./drivers/fsl_gpio.d ./drivers/fsl_power.d ./drivers/fsl_reset.d ./drivers/fsl_swm.d ./drivers/fsl_usart.d  ./device/system_LPC802.d  ./component/uart/miniusart_adapter.d  ./board/boards/board.d ./board/boards/clock_config.d ./board/boards/peripherals.d ./board/boards/pin_mux.d  LPC802_Project.axf
+ 
+14:58:56 **** Build of configuration Debug for project PART2 ****
+make -r -j12 all 
+Building file: ../utilities/fsl_debug_console.c
+Building file: ../startup/startup_lpc802.c
+Building file: ../source/LPC802_Project.c
+Building file: ../source/semihost_hardfault.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_lpc802.d" -MT"startup/startup_lpc802.o" -MT"startup/startup_lpc802.d" -o "startup/startup_lpc802.o" "../startup/startup_lpc802.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/LPC802_Project.d" -MT"source/LPC802_Project.o" -MT"source/LPC802_Project.d" -o "source/LPC802_Project.o" "../source/LPC802_Project.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+Building file: ../drivers/fsl_clock.c
+Building file: ../drivers/fsl_common.c
+Building file: ../drivers/fsl_gpio.c
+Building file: ../drivers/fsl_power.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_power.d" -MT"drivers/fsl_power.o" -MT"drivers/fsl_power.d" -o "drivers/fsl_power.o" "../drivers/fsl_power.c"
+Building file: ../drivers/fsl_reset.c
+Building file: ../drivers/fsl_swm.c
+Building file: ../drivers/fsl_usart.c
+Building file: ../device/system_LPC802.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_reset.d" -MT"drivers/fsl_reset.o" -MT"drivers/fsl_reset.d" -o "drivers/fsl_reset.o" "../drivers/fsl_reset.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_swm.d" -MT"drivers/fsl_swm.o" -MT"drivers/fsl_swm.d" -o "drivers/fsl_swm.o" "../drivers/fsl_swm.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_usart.d" -MT"drivers/fsl_usart.o" -MT"drivers/fsl_usart.d" -o "drivers/fsl_usart.o" "../drivers/fsl_usart.c"
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_LPC802.d" -MT"device/system_LPC802.o" -MT"device/system_LPC802.d" -o "device/system_LPC802.o" "../device/system_LPC802.c"
+Finished building: ../source/semihost_hardfault.c
+Finished building: ../startup/startup_lpc802.c
+ 
+ 
+Building file: ../component/uart/miniusart_adapter.c
+Building file: ../board/boards/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/miniusart_adapter.d" -MT"component/uart/miniusart_adapter.o" -MT"component/uart/miniusart_adapter.d" -o "component/uart/miniusart_adapter.o" "../component/uart/miniusart_adapter.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/board.d" -MT"board/boards/board.o" -MT"board/boards/board.d" -o "board/boards/board.o" "../board/boards/board.c"
+Finished building: ../utilities/fsl_debug_console.c
+Finished building: ../source/LPC802_Project.c
+ 
+Finished building: ../drivers/fsl_common.c
+Finished building: ../drivers/fsl_gpio.c
+ 
+Finished building: ../drivers/fsl_clock.c
+ 
+ 
+Building file: ../board/boards/clock_config.c
+Finished building: ../drivers/fsl_power.c
+Finished building: ../device/system_LPC802.c
+ 
+Invoking: MCU C Compiler
+ 
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/clock_config.d" -MT"board/boards/clock_config.o" -MT"board/boards/clock_config.d" -o "board/boards/clock_config.o" "../board/boards/clock_config.c"
+Finished building: ../drivers/fsl_swm.c
+ 
+Finished building: ../drivers/fsl_reset.c
+ 
+Building file: ../board/boards/peripherals.c
+Building file: ../board/boards/pin_mux.c
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/peripherals.d" -MT"board/boards/peripherals.o" -MT"board/boards/peripherals.d" -o "board/boards/peripherals.o" "../board/boards/peripherals.c"
+Finished building: ../drivers/fsl_usart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/boards/pin_mux.d" -MT"board/boards/pin_mux.o" -MT"board/boards/pin_mux.d" -o "board/boards/pin_mux.o" "../board/boards/pin_mux.c"
+ 
+Finished building: ../board/boards/board.c
+Finished building: ../component/uart/miniusart_adapter.c
+ 
+ 
+Finished building: ../board/boards/peripherals.c
+ 
+Finished building: ../board/boards/clock_config.c
+ 
+Finished building: ../board/boards/pin_mux.c
+ 
+Building target: PART2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART2.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T "PART2_Debug.ld" -o "PART2.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/LPC802_Project.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        3972 B      16256 B     24.43%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         456 B         2 KB     22.27%
+Finished building target: PART2.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART2.axf"; # arm-none-eabi-objcopy -v -O binary "PART2.axf" "PART2.bin" ; # checksum -p LPC802 -d "PART2.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3968	      4	    452	   4424	   1148	PART2.axf
+ 
+14:59:13 **** Incremental Build of configuration Debug for project PART2 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.
+14:59:17 **** Incremental Build of configuration Debug for project PART2 ****
+make -r -j12 all 
+make: Nothing to be done for 'all'.

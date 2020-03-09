@@ -1,0 +1,106 @@
+/*
+ * Copyright 2016-2020 NXP
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * o Redistributions of source code must retain the above copyright notice, this list
+ *   of conditions and the following disclaimer.
+ *
+ * o Redistributions in binary form must reproduce the above copyright notice, this
+ *   list of conditions and the following disclaimer in the documentation and/or
+ *   other materials provided with the distribution.
+ *
+ * o Neither the name of NXP Semiconductor, Inc. nor the names of its
+ *   contributors may be used to endorse or promote products derived from this
+ *   software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ 
+/**
+ * @file    LPC802_Project.c
+ * @brief   Application entry point.
+ */
+#include <stdio.h>
+#include "board.h"
+#include "peripherals.h"
+#include "pin_mux.h"
+#include "clock_config.h"
+#include "LPC802.h"
+#include "fsl_debug_console.h"
+
+#define DIGIT_ONE (17)
+#define DIGIT_TWO (11)
+#define DIGIT_THREE (14)
+#define DIGIT_FOUR (10)
+
+#define SEGMENT_A (4)
+#define SEGMENT_B (0)
+#define SEGMENT_C (13)
+#define SEGMENT_D (9)
+#define SEGMENT_E (7)
+#define SEGMENT_F (12)
+#define SEGMENT_G (1)
+
+
+void turn_on_GPIO(){
+	// Begin GPIO setup ---
+	// Set up a general GPIO for use within the Interrupt Service Routine for MRT
+	// Only the ISR needs the GPIO. (PB8 & PB9)
+	SYSCON->SYSAHBCLKCTRL0 |= (SYSCON_SYSAHBCLKCTRL0_GPIO0_MASK); 	// GPIO is on
+
+	GPIO->CLR[0] = (1UL<<SEGMENT_A);	// LED is off
+	GPIO->CLR[0] = (1UL<<SEGMENT_B);
+	GPIO->CLR[0] = (1UL<<SEGMENT_C);
+	GPIO->CLR[0] = (1UL<<SEGMENT_D);
+	GPIO->CLR[0] = (1UL<<SEGMENT_E);
+	GPIO->CLR[0] = (1UL<<SEGMENT_F);
+	GPIO->CLR[0] = (1UL<<SEGMENT_G);
+
+	GPIO->CLR[0] = (1UL<<DIGIT_ONE);
+	GPIO->SET[0] = (1UL<<DIGIT_TWO);
+	GPIO->CLR[0] = (1UL<<DIGIT_THREE);
+	GPIO->CLR[0] = (1UL<<DIGIT_FOUR);
+
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_A);	// output
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_B);
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_C);
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_D);
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_E);
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_F);
+	GPIO->DIRSET[0] = (1UL<<SEGMENT_G);
+
+	GPIO->DIRSET[0] = (1UL<<DIGIT_ONE);
+	GPIO->DIRSET[0] = (1UL<<DIGIT_TWO);
+	GPIO->DIRSET[0] = (1UL<<DIGIT_THREE);
+	GPIO->DIRSET[0] = (1UL<<DIGIT_FOUR);
+}
+
+
+
+void turn_on_first_digit(){
+	GPIO->SET[0] = (1UL<<DIGIT_ONE);
+}
+
+
+int main(void) {
+
+	turn_on_GPIO();
+
+    /* Enter an infinite loop, just incrementing a counter. */
+    while(1) {
+        asm("NOP");
+    }
+    return 0 ;
+}

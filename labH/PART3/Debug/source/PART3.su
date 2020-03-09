@@ -1,0 +1,8 @@
+core_cm0plus.h:733:22:__NVIC_EnableIRQ	16	static
+core_cm0plus.h:769:22:__NVIC_DisableIRQ	16	static
+PART3.c:59:6:num_to_seven_segment	16	static
+PART3.c:157:6:num_to_seven_segment_digit	16	static
+PART3.c:175:6:turn_on_GPIO	8	static
+PART3.c:211:6:CTIMER0_IRQHandler	8	static
+PART3.c:240:6:ctimer_config	8	static
+PART3.c:296:5:main	8	static

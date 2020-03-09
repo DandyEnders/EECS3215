@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:LPC802_Project_part3 LinkServer Debug,org.eclipse.launchbar.core.descriptorType.default\:Lab G - slides LinkServer Debug,org.eclipse.launchbar.core.descriptorType.default\:Lab G LinkServer Debug,org.eclipse.launchbar.core.descriptorType.default\:Lab G - part2_duty_cycle LinkServer Debug,org.eclipse.launchbar.core.descriptorType.default\:Lab G - part1_one_shot LinkServer Debug,org.eclipse.launchbar.core.descriptorType.default\:Lab G - part3_one_dim_one_bright LinkServer Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:LPC802_Project_part3\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Lab\ G\ LinkServer\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Lab\ G\ LinkServer\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

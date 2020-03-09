@@ -1,0 +1,124 @@
+/*
+ * Copyright 2016-2020 NXP
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * o Redistributions of source code must retain the above copyright notice, this list
+ *   of conditions and the following disclaimer.
+ *
+ * o Redistributions in binary form must reproduce the above copyright notice, this
+ *   list of conditions and the following disclaimer in the documentation and/or
+ *   other materials provided with the distribution.
+ *
+ * o Neither the name of NXP Semiconductor, Inc. nor the names of its
+ *   contributors may be used to endorse or promote products derived from this
+ *   software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ 
+/**
+ * @file    Lab G.c
+ * @brief   Application entry point.
+ */
+#include "LPC802.h"
+#include "clock_config.h" // for BOARD_BootClockFRO30M(), etc.
+
+
+
+#define LED_USER1 (8) 				// Blue LED (LD19 LD20)
+#define LED_USER2 (9) 				// Green LED (LD21 and LD22; and LD5)
+#define MRT_REPEAT (0) 				// Repeat mode for MRT
+#define MRT_ONESHOT (1) 			// One shot mode for MRT
+#define MRT_ONESHOT_Bus_Stall (2)	// One shot + bus stall mode for MRT
+#define MRT_GFLAG0 (0)				// IRQ Flag 0 (channel 0)
+#define MRT_GFLAG1 (1)				// IRQ Flag 1 (channel 1)
+
+#define MRT_CHAN0 (0)				// channel 0 on MRT
+#define MRT_CHAN1 (1)				// channel 1 on MRT
+#define IVALUE_CH0 (60000000)		// [counts] value FRO_Freq * (IRQ desired period)
+#define IVALUE_CH1 (120000000)		// [counts] value FRO_Freq * (IRQ desired period)
+
+/*
+ * @brief   Application entry point.
+ */
+int main(void) {
+
+	// disable interrupts
+	__disable_irq();			// turn off globally
+	NVIC_DisableIRQ(MRT0_IRQn);	// turn off the MRT0 interrupt
+
+	// Begin Core Clock Select ---
+	// Specify that we will use the Free-Running Oscillator
+	// Set the main clock to be the FRO
+	// 0x0 is FRO; 0x1 is eternal clock ; 0x2 is Low pwr osc.; 0x3 is FRO div
+	// Place in bits 1:0 of MAINCLKSEL.
+	SYSCON->MAINCLKSEL = (0X0<<SYSCON_MAINCLKSEL_SEL_SHIFT);
+
+	// Update the Main Clock
+	// Step 1. write 0 to bit 0 of this register
+	// Step 2. write 1 to bit 0 of this register
+	// 6.6.4 says: The MAINCLKUEN register updates the clock source of the main clock with the new input
+	// clock after the MAINCLKSEL register has been written to. In order for the update to take
+	// effect, first write a zero to bit 0 of this register, then write a one.
+	SYSCON->MAINCLKUEN &= ~(0X1);	// step 1. (Sec. 6.6.4 of manual)
+	SYSCON->MAINCLKUEN |= 0X1;		// step 2. (Sec. 6.6.4 of manual)
+
+	// Set the FRO frequency (clock_config.h in SDK)
+	// For FRO at 9MHz: BOARD_BootClockFRO18M();
+	// 12MHz: BOARD_Boot_ClockFRO24M();
+	// 15MHz: BOARD_Boot_ClockFRO30M();
+	// See: Section 7.4 User Manual
+	// This is more compelete than just using set_fro_frequency(24000); for 12 MHz
+	BOARD_BootClockFRO24M(); // 30M, 24M or 18M for 15MHz, 12MHz or 9MHz
+	// End of Core Clock Select ---
+
+	// Begin GPIO setup ---
+	// Set up a general GPIO for use within the Interrupt Service Routine for MRT
+	// Only the ISR needs the GPIO. (PB8 & PB9)
+	SYSCON->SYSAHBCLKCTRL0 |= (SYSCON_SYSABHCLKCTRL0_GPIO0_MASK); 	// GPIO is on
+	GPIO->CLR[0] = (1UL<<LED_USER1);	// LED is on PB8 (LED_USER1)
+	GPIO->DIRSET[0] = (1UL<<LED_USER1);	// output on PB8 (LED_USER1)
+	GPIO->CLR[0] = (1UL<<LED_USER2); 	// LED is on PB9 (LED_USER2)
+	GPIO->DIRSET[0] = (1UL<<LED_USER2); // output on PB9 (LED_USER2)
+	// End of GPIO setup ---
+
+	// Begin MRT code ---
+	// turn on the MRT
+	SYSCON->SYSAHBCLKCTRL0 |= (SYSCON_SYSAHBCLKCTRL0_MRT_MASK);	// MRT is on (bit 10 set)
+
+	// Reset the MRT
+	// Put 0 in the MRT reset bit to reset it.
+	// Then put a 1 in the MRT reset bit to allow the MRT to operate.
+	// manual: 6.6.10
+	SYSCON->PRESETCTRL0 &= ~(SYSCON_PRESETCTRL0_MRT_RST_N_MASK); // reset MRt (bit=0)
+	SYSCON->PRESETCTRL0 |= (SYSCON_PRESETCTRL0_MRT_RST_N_MASK);	 // clear reset (bit=1)
+
+	// One-shot interrupt mode
+	// Put Channel 0 & Channel 1 into one-shot interrupt mode.
+	// Mode = repeat, interrupt = enable
+	// Bit 0: INTEN is 1 for interrupt enabled
+	// Bits 2:1: MODE: 0x0 for repeat mode (0x1 for one-shot int; 0x2 for one-shot stall)
+	MRT0->CHANNEL[MRT_CHAN0].CTRL = (MRT_ONESHOT << MRT_CHANNEL_CTRL_MODE_SHIFT | MRT_CHANNEL_CTRL_INTEN_MASK);
+
+	//
+
+
+    while(1) {
+        /* 'Dummy' NOP to allow source level single stepping of
+            tight while() loop */
+        __asm ("nop");
+    }
+    return 0 ;
+}

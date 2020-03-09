@@ -147,7 +147,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./utilities/fsl_debug_console.o
  .debug_macro   0x00000000       0x22 ./utilities/fsl_debug_console.o
  .debug_line    0x00000000      0x334 ./utilities/fsl_debug_console.o
- .debug_str     0x00000000    0x252ec ./utilities/fsl_debug_console.o
+ .debug_str     0x00000000    0x252e6 ./utilities/fsl_debug_console.o
  .comment       0x00000000       0x76 ./utilities/fsl_debug_console.o
  .debug_frame   0x00000000       0x4c ./utilities/fsl_debug_console.o
  .ARM.attributes
@@ -284,7 +284,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x11e ./drivers/fsl_clock.o
  .debug_macro   0x00000000       0x28 ./drivers/fsl_clock.o
  .debug_line    0x00000000      0x618 ./drivers/fsl_clock.o
- .debug_str     0x00000000    0x24af6 ./drivers/fsl_clock.o
+ .debug_str     0x00000000    0x24af0 ./drivers/fsl_clock.o
  .comment       0x00000000       0x76 ./drivers/fsl_clock.o
  .debug_frame   0x00000000      0x224 ./drivers/fsl_clock.o
  .ARM.attributes
@@ -343,7 +343,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./drivers/fsl_common.o
  .debug_macro   0x00000000       0x6a ./drivers/fsl_common.o
  .debug_line    0x00000000      0x2ec ./drivers/fsl_common.o
- .debug_str     0x00000000    0x23bb8 ./drivers/fsl_common.o
+ .debug_str     0x00000000    0x23bb2 ./drivers/fsl_common.o
  .comment       0x00000000       0x76 ./drivers/fsl_common.o
  .debug_frame   0x00000000       0x50 ./drivers/fsl_common.o
  .ARM.attributes
@@ -409,7 +409,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./drivers/fsl_gpio.o
  .debug_macro   0x00000000       0x6a ./drivers/fsl_gpio.o
  .debug_line    0x00000000      0x30a ./drivers/fsl_gpio.o
- .debug_str     0x00000000    0x248d6 ./drivers/fsl_gpio.o
+ .debug_str     0x00000000    0x248d0 ./drivers/fsl_gpio.o
  .comment       0x00000000       0x76 ./drivers/fsl_gpio.o
  .debug_frame   0x00000000       0x70 ./drivers/fsl_gpio.o
  .ARM.attributes
@@ -487,7 +487,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./drivers/fsl_power.o
  .debug_macro   0x00000000       0x10 ./drivers/fsl_power.o
  .debug_line    0x00000000      0x515 ./drivers/fsl_power.o
- .debug_str     0x00000000    0x24274 ./drivers/fsl_power.o
+ .debug_str     0x00000000    0x2426e ./drivers/fsl_power.o
  .comment       0x00000000       0x76 ./drivers/fsl_power.o
  .debug_frame   0x00000000      0x150 ./drivers/fsl_power.o
  .ARM.attributes
@@ -549,7 +549,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./drivers/fsl_reset.o
  .debug_macro   0x00000000       0x6a ./drivers/fsl_reset.o
  .debug_line    0x00000000      0x309 ./drivers/fsl_reset.o
- .debug_str     0x00000000    0x23f43 ./drivers/fsl_reset.o
+ .debug_str     0x00000000    0x23f3d ./drivers/fsl_reset.o
  .comment       0x00000000       0x76 ./drivers/fsl_reset.o
  .debug_frame   0x00000000       0x70 ./drivers/fsl_reset.o
  .ARM.attributes
@@ -609,7 +609,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./drivers/fsl_swm.o
  .debug_macro   0x00000000       0x6a ./drivers/fsl_swm.o
  .debug_line    0x00000000      0x331 ./drivers/fsl_swm.o
- .debug_str     0x00000000    0x24169 ./drivers/fsl_swm.o
+ .debug_str     0x00000000    0x24163 ./drivers/fsl_swm.o
  .comment       0x00000000       0x76 ./drivers/fsl_swm.o
  .debug_frame   0x00000000       0x50 ./drivers/fsl_swm.o
  .ARM.attributes
@@ -823,7 +823,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x1c ./component/uart/miniusart_adapter.o
  .debug_macro   0x00000000       0x22 ./component/uart/miniusart_adapter.o
  .debug_line    0x00000000      0x3e8 ./component/uart/miniusart_adapter.o
- .debug_str     0x00000000    0x24bf8 ./component/uart/miniusart_adapter.o
+ .debug_str     0x00000000    0x24bf2 ./component/uart/miniusart_adapter.o
  .comment       0x00000000       0x76 ./component/uart/miniusart_adapter.o
  .debug_frame   0x00000000       0xb0 ./component/uart/miniusart_adapter.o
  .ARM.attributes
@@ -895,7 +895,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xd2 ./board/boards/board.o
  .debug_macro   0x00000000       0x2e ./board/boards/board.o
  .debug_line    0x00000000      0x320 ./board/boards/board.o
- .debug_str     0x00000000    0x25882 ./board/boards/board.o
+ .debug_str     0x00000000    0x2587c ./board/boards/board.o
  .comment       0x00000000       0x76 ./board/boards/board.o
  .debug_frame   0x00000000       0x50 ./board/boards/board.o
  .ARM.attributes
@@ -969,7 +969,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./board/boards/clock_config.o
  .debug_macro   0x00000000       0x22 ./board/boards/clock_config.o
  .debug_line    0x00000000      0x397 ./board/boards/clock_config.o
- .debug_str     0x00000000    0x2425d ./board/boards/clock_config.o
+ .debug_str     0x00000000    0x24257 ./board/boards/clock_config.o
  .comment       0x00000000       0x76 ./board/boards/clock_config.o
  .debug_frame   0x00000000       0xe0 ./board/boards/clock_config.o
  .ARM.attributes
@@ -988,7 +988,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x1b ./board/boards/peripherals.o
  .debug_macro   0x00000000      0xaa8 ./board/boards/peripherals.o
  .debug_line    0x00000000       0x61 ./board/boards/peripherals.o
- .debug_str     0x00000000     0x2dbd ./board/boards/peripherals.o
+ .debug_str     0x00000000     0x2db7 ./board/boards/peripherals.o
  .comment       0x00000000       0x76 ./board/boards/peripherals.o
  .debug_frame   0x00000000       0x2c ./board/boards/peripherals.o
  .ARM.attributes
@@ -1067,7 +1067,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x40 ./board/boards/pin_mux.o
  .debug_macro   0x00000000      0x32b ./board/boards/pin_mux.o
  .debug_line    0x00000000      0x440 ./board/boards/pin_mux.o
- .debug_str     0x00000000    0x25b65 ./board/boards/pin_mux.o
+ .debug_str     0x00000000    0x25b5f ./board/boards/pin_mux.o
  .comment       0x00000000       0x76 ./board/boards/pin_mux.o
  .debug_frame   0x00000000      0x148 ./board/boards/pin_mux.o
  .ARM.attributes
@@ -1671,17 +1671,17 @@ OUTPUT(LPC802_Project_part3.axf elf32-littlearm)
  .debug_line    0x000004e6      0xbba ./drivers/fsl_usart.o
  .debug_line    0x000010a0      0x281 ./device/system_LPC802.o
 
-.debug_str      0x00000000    0x25c76
- .debug_str     0x00000000     0x328e ./startup/startup_lpc802.o
-                               0x32b0 (size before relaxing)
- .debug_str     0x0000328e    0x1f4d6 ./source/LPC802_Project_part3.o
-                              0x222cf (size before relaxing)
- .debug_str     0x00022764       0x1f ./source/semihost_hardfault.o
-                               0x2da5 (size before relaxing)
- .debug_str     0x00022783     0x347a ./drivers/fsl_usart.o
-                              0x2578a (size before relaxing)
- .debug_str     0x00025bfd       0x79 ./device/system_LPC802.o
-                              0x22b3f (size before relaxing)
+.debug_str      0x00000000    0x25c70
+ .debug_str     0x00000000     0x3288 ./startup/startup_lpc802.o
+                               0x32aa (size before relaxing)
+ .debug_str     0x00003288    0x1f4d6 ./source/LPC802_Project_part3.o
+                              0x222c9 (size before relaxing)
+ .debug_str     0x0002275e       0x1f ./source/semihost_hardfault.o
+                               0x2d9f (size before relaxing)
+ .debug_str     0x0002277d     0x347a ./drivers/fsl_usart.o
+                              0x25784 (size before relaxing)
+ .debug_str     0x00025bf7       0x79 ./device/system_LPC802.o
+                              0x22b39 (size before relaxing)
 
 .comment        0x00000000       0x75
  .comment       0x00000000       0x75 ./startup/startup_lpc802.o

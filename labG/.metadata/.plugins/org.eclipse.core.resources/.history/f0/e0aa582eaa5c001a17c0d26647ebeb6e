@@ -1,0 +1,71 @@
+/* LPC802_Project_MRT_LabG_MRT_PWM.c
+* Use the MRT to output "software" PWM pulses to
+* GPIO 8 indirectly via Interrupt on Ch. 0.
+* -> this is Blue LED on 802 main part of board
+* -> this is pair of blue LEDs on breakoff part of board.
+*
+* First, start up program with LED off.
+*
+* Then, an IRQ fires due to channel 0. This turns on the LED
+* Then, an IRQ fires due to channel 1. This turns off the LED.
+* Control the ratio of counts to modify the PWM.
+*
+*
+* Sources: User Manual for LPC802;
+* http://blog.nano-age.co.uk/2014/08/some-other-lpc810-mrt-uses.html
+*/
+
+/**
+ * @file    Lab G.c
+ * @brief   Application entry point.
+ */
+#include "LPC802.h"
+#include "clock_config.h" // for BOARD_BootClockFRO30M(), etc.
+
+
+
+#define LED_USER1 (8) 				// Blue LED (LD19 LD20)
+#define LED_USER2 (9) 				// Green LED (LD21 and LD22; and LD5)
+#define MRT_REPEAT (0) 				// Repeat mode for MRT
+#define MRT_ONESHOT (1) 			// One shot mode for MRT
+#define MRT_ONESHOT_Bus_Stall (2)	// One shot + bus stall mode for MRT
+#define MRT_GFLAG0 (0)				// IRQ Flag 0 (channel 0)
+#define MRT_GFLAG1 (1)				// IRQ Flag 1 (channel 1)
+#define MRT_CHAN0 (0)				// channel 0 on MRT
+#define MRT_CHAN1 (1)				// channel 1 on MRT
+
+#define
+
+?
+
+/*
+ * @brief   Application entry point.
+ */
+
+// Interrupt Service Routine for _all_ MRT functions
+// Bit 0 of the STAT register to be monitored for IRQ.
+// if Bit 0 is 1 there is a pending interrupt request.
+// Write a 1 to Bit 0 of STAT to clear the request.
+// Each channel has a separate timer and IRQ and STAT register
+void MRT0_IRQHandler(void){
+	// Variables for keeping track of state
+	// static variables because we need to hold on
+	// to the value from one IRQ to the next.
+	int static chan = 0;
+
+	float static duty_factor = INIT_PWM_DUTY_FACTOR;
+
+	return;
+}
+
+int main(void) {
+
+
+
+	// End of GPIO setup ---
+
+    while(1) {
+        asm("NOP");
+    }
+    return 0 ;
+}
