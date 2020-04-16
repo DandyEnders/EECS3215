@@ -1,0 +1,408 @@
+18:24:49 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6584 B      16256 B     40.50%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6576	      8	    484	   7068	   1b9c	PART3.axf
+ 
+18:25:25 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6596 B      16256 B     40.58%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6588	      8	    484	   7080	   1ba8	PART3.axf
+ 
+18:27:24 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+../source/PART3.c: In function 'PIN_INT0_IRQHandler':
+../source/PART3.c:261:23: error: unknown type name 'happens'
+   PINT->IST = (1<<0); happens in systick
+                       ^~~~~~~
+../source/PART3.c:261:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'systick'
+   PINT->IST = (1<<0); happens in systick
+                                  ^~~~~~~
+make: *** [source/subdir.mk:23: source/PART3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+18:27:34 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6600 B      16256 B     40.60%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6592	      8	    484	   7084	   1bac	PART3.axf
+ 
+18:31:41 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6612 B      16256 B     40.67%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6604	      8	    484	   7096	   1bb8	PART3.axf
+ 
+18:33:36 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6612 B      16256 B     40.67%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6604	      8	    484	   7096	   1bb8	PART3.axf
+ 
+18:34:36 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6584 B      16256 B     40.50%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6576	      8	    484	   7068	   1b9c	PART3.axf
+ 
+18:36:10 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6584 B      16256 B     40.50%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6576	      8	    484	   7068	   1b9c	PART3.axf
+ 
+18:36:52 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6612 B      16256 B     40.67%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6604	      8	    484	   7096	   1bb8	PART3.axf
+ 
+18:37:35 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6612 B      16256 B     40.67%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6604	      8	    484	   7096	   1bb8	PART3.axf
+ 
+18:43:10 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6680 B      16256 B     41.09%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         492 B       2016 B     24.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6672	      8	    484	   7164	   1bfc	PART3.axf
+ 
+19:01:54 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6824 B      16256 B     41.98%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         508 B       2016 B     25.20%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6816	      8	    500	   7324	   1c9c	PART3.axf
+ 
+19:03:01 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6824 B      16256 B     41.98%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         508 B       2016 B     25.20%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6816	      8	    500	   7324	   1c9c	PART3.axf
+ 
+19:03:57 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6920 B      16256 B     42.57%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         508 B       2016 B     25.20%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6912	      8	    500	   7420	   1cfc	PART3.axf
+ 
+19:07:16 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6948 B      16256 B     42.74%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         512 B       2016 B     25.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6940	      8	    504	   7452	   1d1c	PART3.axf
+ 
+19:07:48 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6976 B      16256 B     42.91%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         512 B       2016 B     25.40%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6968	      8	    504	   7480	   1d38	PART3.axf
+ 
+19:09:39 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6920 B      16256 B     42.57%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         508 B       2016 B     25.20%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6912	      8	    500	   7420	   1cfc	PART3.axf
+ 
+19:11:31 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+20:11:26 **** Incremental Build of configuration Debug for project PART3 ****
+make -r -j4 all 
+Building file: ../source/PART3.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_LPC802M001JDH20 -DCPU_LPC802M001JDH20_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../utilities -I../board/boards -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -fmerge-constants -fmacro-prefix-map="../source/"=. -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/PART3.d" -MT"source/PART3.o" -MT"source/PART3.d" -o "source/PART3.o" "../source/PART3.c"
+Finished building: ../source/PART3.c
+ 
+Building target: PART3.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="PART3.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T PART3_Debug.ld -o "PART3.axf"  ./utilities/fsl_debug_console.o  ./startup/startup_lpc802.o  ./source/PART3.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_swm.o ./drivers/fsl_usart.o  ./device/system_LPC802.o  ./component/uart/miniusart_adapter.o  ./board/boards/board.o ./board/boards/clock_config.o ./board/boards/peripherals.o ./board/boards/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        6920 B      16256 B     42.57%
+      BOOT_FLASH:          0 GB        128 B      0.00%
+            SRAM:         508 B       2016 B     25.20%
+        IAP_SRAM:          0 GB         32 B      0.00%
+Finished building target: PART3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.202001081728/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "PART3.axf"; # arm-none-eabi-objcopy -v -O binary "PART3.axf" "PART3.bin" ; # checksum -p LPC802 -d "PART3.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6912	      8	    500	   7420	   1cfc	PART3.axf
+ 
