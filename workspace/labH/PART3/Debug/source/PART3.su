@@ -1,0 +1,15 @@
+core_cm0plus.h:733:22:__NVIC_EnableIRQ	16	static
+core_cm0plus.h:769:22:__NVIC_DisableIRQ	16	static
+core_cm0plus.h:840:22:__NVIC_SetPriority	24	static
+core_cm0plus.h:994:26:SysTick_Config	16	static
+PART3.c:79:6:num_to_seven_segment	16	static
+PART3.c:186:6:num_to_seven_segment_digit	16	static
+PART3.c:203:6:GPIO_config	8	static
+PART3.c:271:6:PIN_INT0_IRQHandler	16	static
+PART3.c:299:6:PIN_INT1_IRQHandler	16	static
+PART3.c:320:6:CTIMER0_IRQHandler	8	static
+PART3.c:369:6:ctimer_config	8	static
+PART3.c:425:6:switch_matrix_config	8	static
+PART3.c:432:6:systick_config	8	static
+PART3.c:457:6:SysTick_Handler	8	static
+PART3.c:480:5:main	8	static
